@@ -82,9 +82,35 @@ console.log(result);
 // Escribir una funcion que retorne 0 si el input es 1 y 1 si el input es 0
 // No se pueden utilizar condicionales, ternarios, negaciones ni operatores bit
 
+function invertir(retorno){
+  let salida = 1 - retorno;
+  return salida;
+}
+
+console.log(invertir(0))
+
+
 // Messenger bzzz
 // (0 ) n
 // Si no hay nadie -> "No hay nadie en linea"
 // Si hay 1 persona -> "user1 esta en linea"
 // Si hay 2 personas -> "user1 y user2 estan en linea"
 // Si hay n>2 personas, "user1 y n-1 mas estan en linea"
+
+function msn(n){
+  if (n < 1){
+  console.log("no hay nadie en linea");
+ return n}
+  if (n < 2){
+   console.log("user1 esta en linea");
+ return n}
+   if(n < 3 ){
+     console.log('user1 y user 2 estan en linea');
+   return n}
+    else{
+       return console.log(" user 1 y otro mas estan en linea");
+       
+     }
+     
+   }
+   console.log(msn(2));
